@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox: align e justify</title>
+
+    <style>
+
+.flex-div{  /*referenciou a div pai por meio do ponto*/
+    width: 500px;
+    
+    display: flex; /*As divs passam a se alinhar de acordo com o eixo main*/
+   }
+    .child-div1{
+    border: 1px solid black;
+    flex-basis: 100px;/*Define a largura inicial que o componente deve ter*/    
+    flex-grow: 2;/*Estabelece o fator de crescimento desejado para a div*/
+    flex-shrink: 1;
+}
+
+    .child-div2{
+    border: 1px solid black;
+    flex-basis: 100px;/*Define a largura inicial que o componente deve ter*/ 
+    flex-grow: 1;/*Estabelece o fator de crescimento desejado para a div*/ 
+    flex-shrink: 2;
+    flex-grow: 1;/*Estabelece o fator de encolhimento desejado para a div*/
+
+/*Para calcular o fator de crescimento da divs filhas
+Tem a div principal como referênciia:flex-shrink:
+Largura toral: 500px
+Espaço vago: 300px
+F.crescimento div1: 2/3 x 300 = 200px
+F.crescimento div: 1/3x300 = 100px */
+
+/*Para calcular o fator de encolhimento
+Largura 500px
+Espaço sobrando: -100px
+F.encolhimento da div 1: (2x300(tamanho inicial))/(f.crecimento da divx tamanho inicial da div)*/
+
+}
+
+ </style>
+</head>
+<body>
+    <div class='flex-div'> <!--Div pai. Ele gerencia as divs filhas-->
+        <div class='child-div1'>
+            1
+        </div>
+        <div class='child-div2'>
+            2
+        </div>
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+.flex-div{  /*referenciou a div pai por meio do ponto*/
+    display: flex; /*As divs passam a se alinhar de acordo com o eixo main*/
+    flex-wrap: wrap;/*Mantem o tamanho das divs filhas e quebra a linha quando necessário*/
+    flex-direction:column-reverse;/*Inverte a direção do alinhamento das divs filhas*/
+}
+.child-div{
+    border: 1px solid black;
+    width: 20px;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class='flex-div'> <!--Div pai. Ele gerencia as divs filhas-->
+        <div class='child-div'>
+            1
+        </div>
+        <div class='child-div'>
+            2
+        </div>
+        <div class='child-div'>
+            3
+        </div>
+
+    </div>
+</body>
+</html>

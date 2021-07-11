@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox: align e justify</title>
+
+    <style>
+.flex-div{  /*referenciou a div pai por meio do ponto*/
+    width: 500px;
+    height: 500px;
+    display: flex; /*As divs passam a se alinhar de acordo com o eixo main*/
+    align-items: flex-end; /*Estabelece a maneira como as divsserão alinhadas*/
+    justify-content: space-around; /*Alinha as divs de acordo com o eixo main*/
+}
+    .child-div1{
+    border: 1px solid black;
+    width: 20px;
+    height: 15px;
+
+}
+
+.child-div2{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+
+}
+.child-div3{
+    border: 1px solid black;
+    width: 20px;
+    height:25px;
+
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class='flex-div'> <!--Div pai. Ele gerencia as divs filhas-->
+        <div class='child-div1'>
+            1
+        </div>
+        <div class='child-div2'>
+            2
+        </div>
+        <div class='child-div3'>
+            3
+        </div>
+
+    </div>
+</body>
+</html>

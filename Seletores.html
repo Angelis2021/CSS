@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+
+    <style>
+        .my-div{
+            color:rgb(105, 60, 52);
+        }
+        /*A # identifica ids*/
+        #my-input{
+            background-color:turquoise;
+        }
+        /*A pseudo classes referenciam algum estado que o elemento está*/
+        #my-input:hover{/* Esse comando vai mudar a cor do campo imput quando o mouse estiver nele*/
+            background-color: indigo;
+
+        }
+                /*A pseudo elemento permite selecionar partes de um elemento */
+                .my-div::first-letter{
+                    font-size: 30px;
+                }
+
+        span[gama-academy]{
+            color:greenyellow;
+        }
+ </style>
+</head>
+<body>
+    <div class="my-div"> <!--A classe é o identificador de nossos componentes-->
+
+    Olá mundo
+
+    </div>
+<input id="my-input"> <!--vai referenciar my-input no css-->
+<span gama-academy>Gama Academy</span> <!--Define o atributo e não o seu valor-->
+</body>
+</html>

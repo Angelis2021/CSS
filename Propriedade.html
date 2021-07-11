@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS test</title>
+    <style>
+        .parent-container {  /* referencia a div pai por meio do ponto. Foi criada para fazer a estilização*/
+            height: 200px;
+            width: 200px;
+            border: 1px solid black; /* Estabelece que a borda será preta e com 1 px*/
+            background-color:cadetblue; /* Estabelecce que o interior da div será azul*/
+
+        }
+
+        .my-div{
+            border: 2px dashed red; /* Estabelece que o conteúdo dentro da div terá uma borda de 2px com uma borda interna tracejada vermelha*/
+            background-color: rgb(244, 243, 247);
+            padding:2px 2px;/*Estabelece que o padding terá 2 pixels acima, abaixo e dos lados, é realizado por meio de coordenadas, sendo o eixo y primeiro.*/
+            margin: 4px 4px;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <div class='parent-container'> <!--Cria uma div pai-->
+        <div class="my-div"> <!--my-div é uma classe-->
+
+            Olá mundo!!
+        </div>
+
+    </div>
+
+</body>
+
+</html>

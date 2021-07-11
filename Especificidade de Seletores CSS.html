@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+
+    <style>
+        .my-div{
+            color: tomato;
+        
+        }
+        div{
+            color:teal/*Seleciona qualquer elemento div e add essa cor*/
+        }
+        #my-div-id{ /*Tem especificidade maior*/
+            color:yellowgreen;
+        }
+/*Os seletores do CSS possuem especificidades, logo uns são mais especificos que os outros. Para identificar cada um buscar CSS specificity calculator  */
+ </style>
+</head>
+<body>
+
+    <div id="my-div-id" class="my-div"> <!--A classe é o identificador de nossos componentes-->
+
+    Olá mundo!
+
+    </div>
+
+</body>
+</html>
